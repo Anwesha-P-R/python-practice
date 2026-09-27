@@ -1,4 +1,4 @@
-amount = float(input("Enter shopping amount: "))
+amount = int(input("Enter shopping amount: "))
 
 if amount >= 5000:
     discount = amount * 20 / 100

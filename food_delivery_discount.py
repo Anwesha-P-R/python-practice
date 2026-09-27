@@ -1,11 +1,11 @@
-distance = float(input("Enter delivery distance in km: "))
-food_bill = float(input("Enter food bill: "))
+distance = int(input("Enter delivery distance in km: "))
+food_bill = int(input("Enter food bill: "))
 
 if distance <= 3:
     delivery_charge = 30
-elif distance <= 7 % distance>3:
+elif distance <= 7 & distance>3:
     delivery_charge = 50
-elif distance <= 12 distance >7:
+elif distance <= 12 & distance >7:
     delivery_charge = 80
 else:
     delivery_charge = 120

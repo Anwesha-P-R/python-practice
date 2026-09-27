@@ -1,5 +1,5 @@
-balance = float(input("Enter account balance: "))
-withdrawal = float(input("Enter withdrawal amount: "))
+balance = int(input("Enter account balance: "))
+withdrawal = int(input("Enter withdrawal amount: "))
 
 if withdrawal % 100 != 0:
     print("Transaction unsuccessful: Amount must be a multiple of ₹100.")

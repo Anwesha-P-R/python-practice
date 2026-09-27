@@ -6,12 +6,14 @@ deposit = float(input("Enter deposit amount: "))
 withdrawal = float(input("Enter withdrawal amount: "))
 
 final_balance = opening_balance + deposit - withdrawal
-
-print("\n--- Account Details ---")
-print("Account Holder:", account_holder)
-print("Account Number:", account_number)
-print("Account Type:", account_type)
-print("Opening Balance:", opening_balance)
-print("Deposit:", deposit)
-print("Withdrawal:", withdrawal)
-print("Final Balance:", final_balance)
+if withdrawal > opening_balance+ deposit:
+    print("Transaction Failed : Amouunt Exceeds Balance!!")
+else:
+    print("\n--- Account Details ---")
+    print("Account Holder:", account_holder)
+    print("Account Number:", account_number)
+    print("Account Type:", account_type)
+    print("Opening Balance:", opening_balance)
+    print("Deposit:", deposit)
+    print("Withdrawal:", withdrawal)
+    print("Final Balance:", final_balance)
